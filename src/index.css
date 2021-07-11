@@ -177,6 +177,20 @@ a {
 .contacts ul li a{
   font-size: 30px;
 }
+.error{
+  background-image: var(--background-image);
+  height: 100vh;
+}
+.error h1{
+  color: white;
+  font-size: 48px;
+  text-align: center;
+  padding-top: 30vh;
+}
+.error .link{
+  margin-left: 45%;
+  font-size: 30px;
+}
 @media (max-width: 992px){
   .homepage .overlay h1{
     font-size: 60px;
