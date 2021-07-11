@@ -220,4 +220,7 @@ a {
   .projects .cards{
     grid-template-columns: repeat(1,1fr);
   }
+  .projects .cards p{
+    font-size: 15px;
+  }
 }
