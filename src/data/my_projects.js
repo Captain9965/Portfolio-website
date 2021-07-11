@@ -33,8 +33,8 @@ export const my_projects=[
         title:"Portfolio Website",
         desc:"This is the awesome personal portfolio website I made as I was learning "+
             " frontend web development with HTML, CSS, Javascript, JSX and React JS",
-        github:"https://github.com/Captain9965/PLC",
+        github:"https://github.com/Captain9965/Portfolio-website",
         demo:"",
-        image:'./photos/plc.png'
+        image:'./photos/portfolio.png'
     }
 ]
