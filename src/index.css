@@ -1,13 +1,223 @@
-body {
+:root{
+  --background-image: linear-gradient(120deg,rgb(0, 175, 181,0.4),rgba(1, 37, 84, 0.67));
+  --background-overlay:rgba(0,0,0,0.4);
+
+}
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+img{
+  max-width: 100%;
+}
+body{
+  font-family: "Fira sans",sans-serif;
+  overflow: auto;
+}
+a {
+  font-family: inherit;
+  text-decoration: none;
+  color: white;
+}
+/*Menu button*/
+.menu-btn{
+  position: absolute;
+  right: 4%;
+  transform: translateX(-50%);
+  margin-top: 5%;
+  z-index: 99999999999;
+
+}
+.menu-btn button{
+  background-color: transparent;
+  color: white;
+  font-size: 36px;
+  border: none;
+  cursor: pointer;
+}
+/*header*/
+.header{
+  position:absolute;
+  right: 0;
+  width:200px;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  
+
+}
+.header.open{
+  height: 100vh;
+  background-color: var(--background-overlay);
+}
+.header ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+}
+.header ul li{
+  margin:20px 0;
+}
+
+
+/*Homepage*/
+.homepage{
+  background: url("./oceans.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+
+}
+.homepage .overlay{
+  background-image: var(--background-image);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  
+}
+.homepage .overlay h1{
+  text-transform: uppercase;
+  font-size: 96px;
+
+}
+.homepage .overlay p{
+  font-size: 30px;
+}
+.homepage .overlay ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.homepage .overlay ul li{
+  margin: 0 20px;
+}
+.homepage .overlay ul li a{
+  font-size: 48px;
+}
+/*Projects*/
+.projects{
+  background-image: var(--background-image);
+}
+.projects h1{
+  padding: 60px 80px;
+  color: white;
+}
+.projects .cards{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin: auto;
+  max-width: 1100px;
+  gap: 20px;
+  color: white;
+  padding-bottom: 20px;
+}
+.projects .cards h4{
+  font-size: 30px;
+  margin: 20px 0 10px;
+}
+.projects .cards p{
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.projects .cards ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.projects .cards ul a{
+  align-items: center;
+  display: flex;
+  gap:10px;
+  border-radius:10px;
+}
+
+.projects .cards ul li>a.github{
+  background-color: #333;
+  padding:5px;
+  font-size: 15px;
+}
+
+.projects .cards .photos{
+  height: 45vh;
+  width: 90vh;
+}
+/*contacts*/
+.contacts{
+  background-image: var(--background-image);
+  height: 100vh;
+}
+.contacts h1{
+  color: white;
+  padding: 60px 80px;
+  font-size: 30px;
+}
+.contacts ul {
+  position:absolute;
+  left:50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.contacts ul li{
+  margin: 20px 0;
+}
+.contacts ul li a{
+  font-size: 30px;
+}
+@media (max-width: 992px){
+  .homepage .overlay h1{
+    font-size: 60px;
+  }
+  .homepage .overlay p{
+    font-size: 20px;
+  }
+  .contacts ul li a{
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px){
+  .projects .cards{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  }
+@media (max-width: 1150px){
+  .projects .cards{
+    padding:0px 20px 20px;
+  }
+
+  }
+@media (max-width: 500px){
+  .homepage .overlay h1{
+    font-size: 40px;
+  }
+  .homepage .overlay p{
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  .homepage .overlay ul li a{
+    font-size: 24px;
+  }
+  .contacts ul li a{
+    font-size: 18px;
+  }
+  .contacts h1, .projects h1{
+      padding:50px 30px
+  }
+  .projects .cards{
+    grid-template-columns: repeat(1,1fr);
+  }
 }
