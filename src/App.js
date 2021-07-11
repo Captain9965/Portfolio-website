@@ -21,11 +21,13 @@ const App=() =>{
       </Route>
       <Route
       path="/Projects"
+      exact
       >
         <Projects />
       </Route>
       <Route
       path="/contact-me"
+      exact
       >
         <Contacts />
       </Route>
