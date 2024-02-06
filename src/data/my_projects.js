@@ -3,7 +3,7 @@ import {v4 as uuidv4} from "uuid"
 export const my_projects=[
     {
         id:uuidv4(),
-        title:"Cashierless supermarket system",
+        title:"Mpesa Services API",
         desc:"This project was inspired by the emergence of cashierless supermarket "+
             "technologies that are paving the way for the retail systems of the future. "+
             "It is essentially an RFID based conveyor belt-driven system"+
@@ -16,7 +16,7 @@ export const my_projects=[
     },
     {
         id:uuidv4(),
-        title:"PLC based hydroelectric dam flow control system and HMI ",
+        title:"E-commerce Store ",
         desc:"This is a dam flow control system I implemented as I was learning "+
             " Programmable Logic controllers with ladder logic, Structured Text language "+
             " Functional block diagrams, Structured Text and Instruction lists. "+
@@ -30,11 +30,30 @@ export const my_projects=[
     },
     {
         id:uuidv4(),
-        title:"Portfolio Website",
+        title:"My blog",
         desc:"This is the awesome personal portfolio website I made as I was learning "+
             " frontend web development with HTML, CSS, Javascript, JSX and React JS",
         github:"https://github.com/Captain9965/Portfolio-website",
         demo:"",
         image:'./photos/portfolio.png'
-    }
+    },
+    {
+        id:uuidv4(),
+        title:"Paymat Payments gateway",
+        desc:"This is the awesome personal portfolio website I made as I was learning "+
+            " frontend web development with HTML, CSS, Javascript, JSX and React JS",
+        github:"https://github.com/Captain9965/Portfolio-website",
+        demo:"",
+        image:'./photos/portfolio.png'
+    },
+    {
+        id:uuidv4(),
+        title:"IoT Water ATM",
+        desc:"This is the awesome personal portfolio website I made as I was learning "+
+            " frontend web development with HTML, CSS, Javascript, JSX and React JS",
+        github:"https://github.com/Captain9965/Portfolio-website",
+        demo:"",
+        image:'./photos/portfolio.png'
+    },
+
 ]

@@ -6,8 +6,8 @@ const Homepage=()=>{
         <>
             <section className="homepage">
                <div className="overlay">
-               <h1>Lenny Orengo</h1>
-                <p>Mechatronic Engineer | Programmer | IoT Enthusiast</p>
+               <h1>Lenny Weda</h1>
+                <p> Software Engineer | Scrum Master | Embedded Systems</p>
                 <ul>
                     <li>
                         <a href="https://www.linkedin.com/in/lenny-weda-171287197/"
