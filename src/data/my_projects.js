@@ -4,15 +4,15 @@ export const my_projects=[
     {
         id:uuidv4(),
         title:"Mpesa Services API",
-        desc:"This project was inspired by the emergence of cashierless supermarket "+
-            "technologies that are paving the way for the retail systems of the future. "+
-            "It is essentially an RFID based conveyor belt-driven system"+
-            "that enables users to buy RFID tagged items without "+
-            "the need of a cashier. This aims to improve user "+
-            "experience and to save supermarkets labour overheads.",
-        github:"https://github.com/Captain9965/Cashierless-Supermarket-System",
+        desc:"This is a developer-centric abstraction of the Daraja API built in Flask"+
+            "that will enable seamless, quick and painless intergration with their web and mobile applications"+
+            "With a three step process, one is able to use services like MPESA STK push, "+
+            "C2B and B2C cashless payments. This eliminates the need to comb through API docs."+
+            "Just register and run! It also provides full transactions history and backup "+
+            "depending on subscription",
+        github:"https://github.com/Captain9965/Mpesa-services-API",
         demo:"",
-        image:'./photos/cashierless.jpg'
+        image:'./photos/mpesa_services_api.jpg'
     },
     {
         id:uuidv4(),
